@@ -16,8 +16,10 @@ fn vocal(word: &str) -> String {
 
 fn consonantes(word: &str) -> String {
     let mut word = String::from(word);
-    word.remove(0);
-    word.push_str("-fay");
+    let a = word.remove(0);
+    word.push('-');
+    word.push(a);
+    word.push_str("ay");
     word
 }
 

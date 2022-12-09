@@ -9,6 +9,4 @@ fn main() {
     args.iter()
         .map(|f| to_pig_latin(f))
         .for_each(|f| println!("{} ", f));
-    println!("{}", to_pig_latin("apple"));
-    println!("{}", to_pig_latin("first"));
 }
