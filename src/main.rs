@@ -8,5 +8,6 @@ fn main() {
     args.remove(0);
     args.iter()
         .map(|f| to_pig_latin(f))
-        .for_each(|f| println!("{} ", f));
+        .for_each(|f| print!("{} ", f));
+    println!();
 }
